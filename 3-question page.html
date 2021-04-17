@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <title>3-question page</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Custom styles for this template -->
+        <link href="css/3-question page.css" rel="stylesheet">
+    </head>
+    
+    <body class="d-flex flex-column h-100">
+        
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class=" container-sm">
+                    <a class="navbar-brand" href="#">AskKadyrov</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <form class="d-flex">
+                            <input class="form-control me-2 search-form" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Ask!</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container profile-container justify-content-end">
+                    <div class="col-xs offset-md-7"></div>
+                    <div class="col offset padding-0 justify-content-start">
+                        <div class="col">
+                            <a class="profile-link" href="#">Log in</a>
+                            <a class="profile-link" href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Begin page content -->
+        <main class="flex-shrink-0">
+            <div class="container-fluid main-workspace">
+                <div class="row justify-content-between">
+                    <div class="col-9">
+                        <div class="row-fluid right-board">
+                            <div class="row-fluid questions-header">
+                                <div class="container-fluid question-container">
+                                    <div class="row">
+                                        <div class="col-2 question-left-board">
+                                            <div class="row justify-content-center">
+                                                <img src="img/200.jpg">
+                                            </div>
+                                            <div class="row justify-content-center upvote-buttons-container">
+                                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                                <input type="number" min="-100" max="100" value="1" readonly class="raz">
+                                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-10 question-right-board">
+                                            <div class="row-fluid question-title">
+                                                <!-- <a href="#">How to wake up in glad mood and with love of life?</a> -->
+                                                <label>How to wake up in glad mood and with love of life?</label>
+                                            </div>
+                                            <div class="row-fluid question-text">
+                                                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                            </div>
+                                            <div class="row justify-content-start question-bottom-board">
+                                                <div class="col">
+                                                    <label>Tags:</label>
+                                                    <a href="#">depression</a>
+                                                    <a href="#">melancholy</a>
+                                                    <a href="#">yearning</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid answer-container">
+                                    <div class="row">
+                                        <div class="col-2 question-left-board">
+                                            <div class="row justify-content-center">
+                                                <img src="img/200.jpg">
+                                            </div>
+                                            <div class="row justify-content-center upvote-buttons-container">
+                                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                                <input type="number" min="-100" max="100" value="1" readonly class="raz">
+                                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-10 question-right-board">
+                                            <div class="row-fluid">
+                                                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                            </div>
+                                            <div class="row justify-content-start question-bottom-board">
+                                                <div class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">Correct!</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid answer-container">
+                                    <div class="row">
+                                        <div class="col-2 question-left-board">
+                                            <div class="row justify-content-center">
+                                                <img src="img/200.jpg">
+                                            </div>
+                                            <div class="row justify-content-center upvote-buttons-container">
+                                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                                <input type="number" min="-100" max="100" value="1" readonly class="raz">
+                                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-10 question-right-board">
+                                            <div class="row-fluid">
+                                                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                            </div>
+                                            <div class="row justify-content-start question-bottom-board">
+                                                <div class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">Correct!</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid new-answer-container">
+                                    <div class="row">
+                                        <textarea class="form-control" wrap="soft" placeholder="Entire your answer here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-2 answer-button">
+                                        <button class="btn btn-outline-success">Answer</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row justify-content-end">
+                            <div class="col-10 left-board">
+                                <div class="row">
+                                    <label class="header-label">Popular tags</label>
+                                    <div class="container tags-container">
+                                        <a class="header-link" href="#">perl</a>
+                                        <a class="header-link" href="#">python</a>
+                                        <a class="header-link" href="#">TechnoPark</a>
+                                        <a class="header-link" href="#">MySQL</a>
+                                        <a class="header-link" href="#">django</a>
+                                        <a class="header-link" href="#">Mail.ru</a>
+                                        <a class="header-link" href="#">Voloshin</a>
+                                        <a class="header-link" href="#">depression</a>
+                                        <a class="header-link" href="#">melancholy</a>
+                                        <a class="header-link" href="#">yearning</a>
+                                    </div>
+                                    <label class="header-label">Best members</label>
+                                    <div class="container members-container">
+                                        <div class="row justify-content-start">
+                                            <a class="header-link" href="#">Mr.Freeman</a>
+                                            <a class="header-link" href="#">Dr.House</a>
+                                            <a class="header-link" href="#">Bender</a>
+                                            <a class="header-link" href="#">Queen Victoria</a>
+                                            <a class="header-link" href="#">V.Pupkin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        
+    </body>
+</html>
